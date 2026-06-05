@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hatpicker 2 — Der Hut entscheidet</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="stage">
+      <h1>Hatpicker</h1>
+      <p class="hint">Klick auf <span class="kbd">Hut werfen</span> — der Hut entscheidet</p>
+
+      <div class="board" id="board">
+        <div class="hat" id="hat" aria-hidden="true">
+          <img src="assets/hat.png" alt="" />
+        </div>
+
+        <div class="cards-row" id="cardsRow">
+          <div class="card" data-idx="0" data-officer="1">
+            <img class="head" src="assets/officer1_happy.png" alt="ISMS Officer 1" />
+            <div class="sign">ISMS Officer 1</div>
+          </div>
+          <div class="card" data-idx="1" data-officer="2">
+            <img class="head" src="assets/officer2_happy.png" alt="ISMS Officer 2" />
+            <div class="sign">ISMS Officer 2</div>
+          </div>
+          <div class="card" data-idx="2" data-officer="3">
+            <img class="head" src="assets/officer3_happy.png" alt="ISMS Officer 3" />
+            <div class="sign">ISMS Officer 3</div>
+          </div>
+        </div>
+      </div>
+
+      <button class="throw-btn" id="throwBtn" type="button">Hut werfen</button>
+
+      <div class="result" aria-live="polite">
+        <div class="result-sign" id="resultSign">
+          <span class="result-label">Ergebnis</span>
+          <span class="result-name" id="resultName">—</span>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
